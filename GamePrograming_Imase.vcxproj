@@ -1,0 +1,1497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>TimeScore</RootNamespace>
+    <ProjectGuid>{f7d7385d-bd68-491d-a596-4668a4a3202b}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TimeScore</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\MeshContentTask.props" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;dxguid.lib;uuid.lib;kernel32.lib;user32.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;dxguid.lib;uuid.lib;kernel32.lib;user32.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;jsoncpp.lib;DirectXTex.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\DirectXTK\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;dxguid.lib;uuid.lib;kernel32.lib;user32.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;dxguid.lib;uuid.lib;kernel32.lib;user32.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;jsoncpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <EnableDpiAwareness>PerMonitorHighDPIAware</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DeviceResources.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="ImaseLib\BinaryFile.h" />
+    <ClInclude Include="ImaseLib\DebugCamera.h" />
+    <ClInclude Include="ImaseLib\DebugFont.h" />
+    <ClInclude Include="ImaseLib\DepthStencil.h" />
+    <ClInclude Include="ImaseLib\GaugeManager.h" />
+    <ClInclude Include="ImaseLib\MoveUserInterface.h" />
+    <ClInclude Include="ImaseLib\NumberManager.h" />
+    <ClInclude Include="ImaseLib\OperationUI.h" />
+    <ClInclude Include="ImaseLib\Particle.h" />
+    <ClInclude Include="ImaseLib\ParticleSandstorm.h" />
+    <ClInclude Include="ImaseLib\ParticleUtility.h" />
+    <ClInclude Include="ImaseLib\RenderTexture.h" />
+    <ClInclude Include="ImaseLib\SceneManager.h" />
+    <ClInclude Include="ImaseLib\Transition.h" />
+    <ClInclude Include="ImaseLib\UserInterface.h" />
+    <ClInclude Include="Json\json\allocator.h" />
+    <ClInclude Include="Json\json\assertions.h" />
+    <ClInclude Include="Json\json\config.h" />
+    <ClInclude Include="Json\json\forwards.h" />
+    <ClInclude Include="Json\json\json.h" />
+    <ClInclude Include="Json\json\json_features.h" />
+    <ClInclude Include="Json\json\reader.h" />
+    <ClInclude Include="Json\json\value.h" />
+    <ClInclude Include="Json\json\version.h" />
+    <ClInclude Include="Json\json\writer.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ReadData.h" />
+    <ClInclude Include="Scene\GameObjects\Background\Background.h" />
+    <ClInclude Include="Scene\GameObjects\Background\CityNight.h" />
+    <ClInclude Include="Scene\GameObjects\Background\CloudyBackGround.h" />
+    <ClInclude Include="Scene\GameObjects\Background\GrandCanyon.h" />
+    <ClInclude Include="Scene\GameObjects\Background\Nebura.h" />
+    <ClInclude Include="Scene\GameObjects\Background\Satellite.h" />
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\PlaySceneCamera.h" />
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\StatePlaySceneCamera.h" />
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\DeathCamera.h" />
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\IPlayerCameraFactory.h" />
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\NormalCamera.h" />
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\PlayerCameraFactory.h" />
+    <ClInclude Include="Scene\GameObjects\Camera\StageSelectCamera.h" />
+    <ClInclude Include="Scene\GameObjects\Camera\TitleCamera.h" />
+    <ClInclude Include="Scene\GameObjects\FiniteStateMachine.h" />
+    <ClInclude Include="Scene\GameObjects\Models\Draw.h" />
+    <ClInclude Include="Scene\GameObjects\Models\KeyboardTracker.h" />
+    <ClInclude Include="Scene\GameObjects\Models\Resources.h" />
+    <ClInclude Include="Scene\GameObjects\Models\SingletonDeviceResources.h" />
+    <ClInclude Include="Scene\GameObjects\Models\Textures.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\Bullet.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\BulletManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\Bullet_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\Bullet_02.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\Bullet_Turret.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\Airship.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipCustom_00.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipBody.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipElevatorRight.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipElevator_Left.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerLeft.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerMiddle.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerRight.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerSupportLeft.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerSupportRight.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRoom_1.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRoom_2.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRudder.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\IAirshipComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\IAirshipPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\AirshipMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\AirshipMotion_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\IAirshipState.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\IStateAirshipFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\StateAirshipFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Body.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobot.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotCustom_00.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotHead.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\ICrabRobotComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\ICrabRobotPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\CrabRobotKillMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\CrabRobotMotion_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\ICrabRobotState.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\IStateCrabRobotFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\StateCrabRobotFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyCustom_00.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyKillMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion_02.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_02.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_03.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\IStateEnemyFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\StateEnemyFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\HorizontalStabilizer.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\LeftTire.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\IPlayerComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\IPlayerPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\IState.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\IStatePlayerFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\Player.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerAvoidanceMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerKillMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerStopMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerTurbMode.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\StatePlayerFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Propeller.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\RightTire.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Tail.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\Turret.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurretCustom_00.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurretManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\ITurretComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\ITurretPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretBase.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Left.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Middle.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Right.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretHead.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\IStateTurretFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\ITurretState.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\StateTurretFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\TurretKillMotion.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\TurretMotion_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\WheelSupport.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Wing.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Colliider\Collision.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Colliider\CollisionOLL.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\BloodEffect.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\LightEffect.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\PlayerEffect.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\SandstormEffect.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\SmokeEffect.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\BlackFloor.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\Floor.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\FloorManagers\FloorManager_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\MinStoneFloor\MinStoneFloor.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\StoneFloor.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Ground.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\Coin.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\CoinManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\FuelSupplyPoint.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\HpSupplyPoint.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\Item.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\Respawn.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\RespawnManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\SupplyPointManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\Bench.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchBackWood.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchFrame_Left.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchFrame_Right.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchUnderWood.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\IBenchPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\Fence.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Center_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Top_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Under_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FencePartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceVerticalPlank_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\IFencePartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\House.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjects.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjectsComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjectsManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\IHouseMoveObjectsComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjects.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjectsManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjectsParts\IMoveObjectsComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjectsParts\MoveObjectsComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\ObjectsManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Houses\House_02.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Houses\House_03.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\StoneStairs\StoneStairs.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Walls\BigBrickWall\BigBrickWall.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Walls\BigBrickWall\BigBrickWallManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLight.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\IStreetLightComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\IStreetLightPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightConnection.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightFoundation.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightLight.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\Windmill.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\IWindmillComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\IWindmillPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillBlade_01.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillBlade_02.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillComponent.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillFoundation.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillPartFactory.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillRoom.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillStairs.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillTower.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Sandstorm\SandstormManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ShadowMap\CascadeShadowMap.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\ShadowMap\CascadeShadowMapManager.h" />
+    <ClInclude Include="Scene\GameObjects\PlayScene\Sun\Sun.h" />
+    <ClInclude Include="Scene\GameObjects\ScoreCalculation\ScoreCalculation.h" />
+    <ClInclude Include="Scene\GameObjects\SelectScene\Palace\Palace.h" />
+    <ClInclude Include="Scene\GameObjects\SelectScene\SelectPlayer.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\OperationTaskUI.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\BenchStreetLightGet.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ChallengeLimitsLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\CoinGet.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\EnemyAndDesScoreLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\IStateTutorialUI.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\LetIsRecoverLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\NiceLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\RecoveryItemsGet.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ScoreUpLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ShiftStopLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\Time3minutesLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\WASDQEmove.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\WelcomeToTownLetter.h" />
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\TutorialUI.h" />
+    <ClInclude Include="Scene\GameObjects\UI\FreeUi\FreeUi.h" />
+    <ClInclude Include="Scene\GameObjects\UI\Gaueg.h" />
+    <ClInclude Include="Scene\GameObjects\UI\Gaueg\VolumeGaueg.h" />
+    <ClInclude Include="Scene\GameObjects\UI\Letter\returnLetter\ReturnLetter.h" />
+    <ClInclude Include="Scene\GameObjects\UI\Letter\SpaseLetter.h" />
+    <ClInclude Include="Scene\GameObjects\UI\Letter\StageSelectLetter.h" />
+    <ClInclude Include="Scene\GameObjects\UI\MenuBackGround\MenuBackGroundUI.h" />
+    <ClInclude Include="Scene\GameObjects\UI\OperationInstructions\OperationInstructionsUI.h" />
+    <ClInclude Include="Scene\GameObjects\UI\SwayUserInterface.h" />
+    <ClInclude Include="Scene\GameObjects\UI\Timer\Score.h" />
+    <ClInclude Include="Scene\GameObjects\UI\Timer\Timer.h" />
+    <ClInclude Include="Scene\GameObjects\UI\TransitionState.h" />
+    <ClInclude Include="Scene\GameObjects\UI\UnderBar\UnderBar.h" />
+    <ClInclude Include="Scene\GameTitle.h" />
+    <ClInclude Include="Scene\HomeScene\HomeScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeHomeReturnScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeNoneScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeOptionScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangePlayerCustomScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeStageSelectScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\StateHomeScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateDrawOptionScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption\ChangeDrawOptionScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption\ChangeSoundOptionScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\StateOptionScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateSoundOptionScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StatePlayerCustomScene.h" />
+    <ClInclude Include="Scene\HomeScene\HomeState\StateStageSelectScene.h" />
+    <ClInclude Include="Scene\OperationInstructions\OperationInstructionsScene.h" />
+    <ClInclude Include="Scene\PlayScene\PausedScreen.h" />
+    <ClInclude Include="Scene\PlayScene\PlayScene.h" />
+    <ClInclude Include="Scene\PlayScene\TownScene.h" />
+    <ClInclude Include="Scene\PlayScene\TutorialScene.h" />
+    <ClInclude Include="Scene\ResultScene.h" />
+    <ClInclude Include="Scene\SelectScene\MenuSelect\MenuSelect.h" />
+    <ClInclude Include="Scene\SelectScene\MenuSelect\StateManuScene\OptionSelectScene.h" />
+    <ClInclude Include="Scene\SelectScene\MenuSelect\StateManuScene\StageSelectScen.h" />
+    <ClInclude Include="Scene\SelectScene\MenuSelect\StateManuScene\StateMenuScene.h" />
+    <ClInclude Include="Scene\SelectScene\MenuSelect\StateManuScene\TitleSelectScene.h" />
+    <ClInclude Include="Scene\SelectScene\PauseSelect\PauseSelect.h" />
+    <ClInclude Include="Scene\SelectScene\PauseSelect\StatePauseScene\PauseSelectStart.h" />
+    <ClInclude Include="Scene\SelectScene\PauseSelect\StatePauseScene\PauseStageSelectScen.h" />
+    <ClInclude Include="Scene\SelectScene\PauseSelect\StatePauseScene\StatePauseScene.h" />
+    <ClInclude Include="Scene\StageSelectScene.h" />
+    <ClInclude Include="Scene\StageSelect\ISelectPlayScene.h" />
+    <ClInclude Include="Scene\StageSelect\SelectTown.h" />
+    <ClInclude Include="Scene\StageSelect\StageSelect.h" />
+    <ClInclude Include="Scene\StageSelect\Tutorial.h" />
+    <ClInclude Include="Scene\TitleScene.h" />
+    <ClInclude Include="StepTimer.h" />
+    <ClInclude Include="SystemClass\KeyboardName.h" />
+    <ClInclude Include="UserResources.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DeviceResources.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="ImaseLib\BinaryFile.cpp" />
+    <ClCompile Include="ImaseLib\DebugCamera.cpp" />
+    <ClCompile Include="ImaseLib\DebugFont.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\DepthStencil.cpp" />
+    <ClCompile Include="ImaseLib\GaugeManager.cpp" />
+    <ClCompile Include="ImaseLib\MoveUserInterface.cpp" />
+    <ClCompile Include="ImaseLib\NumberManager.cpp" />
+    <ClCompile Include="ImaseLib\OperationUI.cpp" />
+    <ClCompile Include="ImaseLib\Particle.cpp" />
+    <ClCompile Include="ImaseLib\ParticleSandstorm.cpp" />
+    <ClCompile Include="ImaseLib\ParticleUtility.cpp" />
+    <ClCompile Include="ImaseLib\RenderTexture.cpp" />
+    <ClCompile Include="ImaseLib\Transition.cpp" />
+    <ClCompile Include="ImaseLib\UserInterface.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Background\Background.cpp" />
+    <ClCompile Include="Scene\GameObjects\Background\CityNight.cpp" />
+    <ClCompile Include="Scene\GameObjects\Background\CloudyBackGround.cpp" />
+    <ClCompile Include="Scene\GameObjects\Background\GrandCanyon.cpp" />
+    <ClCompile Include="Scene\GameObjects\Background\Nebura.cpp" />
+    <ClCompile Include="Scene\GameObjects\Background\Satellite.cpp" />
+    <ClCompile Include="Scene\GameObjects\Camera\PlaySceneCamera\PlaySceneCamera.cpp" />
+    <ClCompile Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\DeathCamera.cpp" />
+    <ClCompile Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\NormalCamera.cpp" />
+    <ClCompile Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\PlayerCameraFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\Camera\StageSelectCamera.cpp" />
+    <ClCompile Include="Scene\GameObjects\Camera\TitleCamera.cpp" />
+    <ClCompile Include="Scene\GameObjects\Models\Draw.cpp" />
+    <ClCompile Include="Scene\GameObjects\Models\KeyboardTracker.cpp" />
+    <ClCompile Include="Scene\GameObjects\Models\Resources.cpp" />
+    <ClCompile Include="Scene\GameObjects\Models\SingletonDeviceResources.cpp" />
+    <ClCompile Include="Scene\GameObjects\Models\Textures.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\Bullet.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\BulletManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\Bullet_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\Bullet_02.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\Bullet_Turret.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\Airship.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipCustom_00.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipBody.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipElevatorRight.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipElevator_Left.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPartFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerLeft.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerMiddle.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerRight.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerSupportLeft.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerSupportRight.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRoom_1.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRoom_2.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRudder.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\AirshipMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\AirshipMotion_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\StateAirshipFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Body.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobot.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotCustom_00.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotHead.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotPartFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\CrabRobotKillMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\CrabRobotMotion_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\StateCrabRobotFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyCustom_00.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyKillMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion_02.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_02.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_03.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\StateEnemyFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\HorizontalStabilizer.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\LeftTire.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\Player.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerAvoidanceMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerKillMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerPartFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerStopMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerTurbMode.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\StatePlayerFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Propeller.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\RightTire.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Tail.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\Turret.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurretCustom_00.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurretManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretBase.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Left.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Middle.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Right.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretHead.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretPartFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\StateTurretFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\TurretKillMotion.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\TurretMotion_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\WheelSupport.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Wing.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Colliider\Collision.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Colliider\CollisionOLL.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\BloodEffect.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\LightEffect.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\PlayerEffect.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\SandstormEffect.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\SmokeEffect.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\BlackFloor.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\Floor.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\FloorManagers\FloorManager_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\MinStoneFloor\MinStoneFloor.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\StoneFloor.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Ground.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\Coin.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\CoinManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\FuelSupplyPoint.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\HpSupplyPoint.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\Item.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\Respawn.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\RespawnManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\SupplyPointManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\Bench.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchBackWood.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchFrame_Left.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchFrame_Right.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchPartFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchUnderWood.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\Fence.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Center_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Top_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Under_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FencePartFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceVerticalPlank_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\House.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjects.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjectsManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjects.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjectsManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\ObjectsManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Houses\House_02.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Houses\House_03.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\StoneStairs\StoneStairs.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Walls\BigBrickWall\BigBrickWall.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Walls\BigBrickWall\BigBrickWallManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLight.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightConnection.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightFoundation.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightLight.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightPartFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\Windmill.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillBlade_01.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillBlade_02.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillFoundation.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillPartFactory.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillRoom.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillStairs.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillTower.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Sandstorm\SandstormManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ShadowMap\CascadeShadowMap.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\ShadowMap\CascadeShadowMapManager.cpp" />
+    <ClCompile Include="Scene\GameObjects\PlayScene\Sun\Sun.cpp" />
+    <ClCompile Include="Scene\GameObjects\ScoreCalculation\ScoreCalculation.cpp" />
+    <ClCompile Include="Scene\GameObjects\SelectScene\Palace\Palace.cpp" />
+    <ClCompile Include="Scene\GameObjects\SelectScene\SelectPlayer.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\OperationTaskUI.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\BenchStreetLightGet.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ChallengeLimitsLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\CoinGet.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\EnemyAndDesScoreLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\LetIsRecoverLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\NiceLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\RecoveryItemsGet.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ScoreUpLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ShiftStopLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\Time3minutesLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\WASDQEmove.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\WelcomeToTownLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\TutorialUI.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\FreeUi\FreeUi.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\Gaueg.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\Gaueg\VolumeGaueg.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\Letter\returnLetter\ReturnLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\Letter\SpaseLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\Letter\StageSelectLetter.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\MenuBackGround\MenuBackGroundUI.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\OperationInstructions\OperationInstructionsUI.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\SwayUserInterface.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\Timer\Score.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\Timer\Timer.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\TransitionState.cpp" />
+    <ClCompile Include="Scene\GameObjects\UI\UnderBar\UnderBar.cpp" />
+    <ClCompile Include="Scene\GameTitle.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeHomeReturnScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeNoneScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeOptionScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangePlayerCustomScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeStageSelectScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\StateHomeScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateDrawOptionScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption\ChangeDrawOptionScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption\ChangeSoundOptionScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\StateOptionScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateSoundOptionScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StatePlayerCustomScene.cpp" />
+    <ClCompile Include="Scene\HomeScene\HomeState\StateStageSelectScene.cpp" />
+    <ClCompile Include="Scene\OperationInstructions\OperationInstructionsScene.cpp" />
+    <ClCompile Include="Scene\PlayScene\PausedScreen.cpp" />
+    <ClCompile Include="Scene\PlayScene\PlayScene.cpp" />
+    <ClCompile Include="Scene\PlayScene\TownScene.cpp" />
+    <ClCompile Include="Scene\PlayScene\TutorialScene.cpp" />
+    <ClCompile Include="Scene\ResultScene.cpp" />
+    <ClCompile Include="Scene\SelectScene\MenuSelect\MenuSelect.cpp" />
+    <ClCompile Include="Scene\SelectScene\MenuSelect\StateManuScene\OptionSelectScene.cpp" />
+    <ClCompile Include="Scene\SelectScene\MenuSelect\StateManuScene\StageSelectScen.cpp" />
+    <ClCompile Include="Scene\SelectScene\MenuSelect\StateManuScene\StateMenuScene.cpp" />
+    <ClCompile Include="Scene\SelectScene\MenuSelect\StateManuScene\TitleSelectScene.cpp" />
+    <ClCompile Include="Scene\SelectScene\PauseSelect\PauseSelect.cpp" />
+    <ClCompile Include="Scene\SelectScene\PauseSelect\StatePauseScene\PauseSelectStart.cpp" />
+    <ClCompile Include="Scene\SelectScene\PauseSelect\StatePauseScene\PauseStageSelectScen.cpp" />
+    <ClCompile Include="Scene\SelectScene\PauseSelect\StatePauseScene\StatePauseScene.cpp" />
+    <ClCompile Include="Scene\StageSelectScene.cpp" />
+    <ClCompile Include="Scene\StageSelect\ISelectPlayScene.cpp" />
+    <ClCompile Include="Scene\StageSelect\SelectTown.cpp" />
+    <ClCompile Include="Scene\StageSelect\StageSelect.cpp" />
+    <ClCompile Include="Scene\StageSelect\Tutorial.cpp" />
+    <ClCompile Include="Scene\TitleScene.cpp" />
+    <ClCompile Include="SystemClass\KeyboardName.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico" />
+    <ImageContentTask Include="Resources\Models\png\House_01SpecularMap.jpg">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ImageContentTask>
+    <ImageContentTask Include="Resources\Models\png\NormalMap\House_01NormalMap.jpg">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ImageContentTask>
+    <ImageContentTask Include="Resources\Models\png\NormalMap\NoNormalMap.jpg">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ImageContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Shaders\Gauge.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Shaders\Number.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Shaders\OperationUI.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Shaders\Particle.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Shaders\Shadow\Shadow\SM_Common.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Shaders\Transition.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Shaders\UI.hlsli">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\Shaders\GaugeGS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\GaugePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\GaugeVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\LightEffectsPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0_level_9_3</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\NumberGS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\NumberPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\NumberVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\OperationTaskUIPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\OperationUIGS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\OperationUIPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\OperationUIVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ParticleGS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ParticlePS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ParticleVS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ShadowPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_GS_01.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_No_Picture_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_No_Picture_PS_Depth.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_No_Picture_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_No_Picture_VS_Depth.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_PS_Depth.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_VS_Depth.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\SwayUIPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\TransitionGS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\TransitionPS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\TransitionVS.hlsl">
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\UIGS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Geometry</ShaderType>
+      <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0</ShaderModel>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\UIPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\UIVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Resources/Shaders/%(Filename).cso</ObjectFileOutput>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Resources\Models\fbx\AirshipBody.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Bench.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BenchBackWood.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BenchFrame.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BenchUnderWood.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BigBrickWall.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BlackFloor.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Body.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Body2.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Bullet_04.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\chear.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CityNight.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CloudyBackGround.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Coin.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotCalf_LeftBack.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotCalf_LeftFroat.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotCalf_RightBack.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotCalf_RightFront.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotHead.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotLeg_LeftBack.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotLeg_LeftFroat.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotLeg_RightBack.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotLeg_RightFront.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotThigh_LeftBack.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotThigh_LeftFroat.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotThigh_RightBack.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotThigh_RightFront.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Cube.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Cyber1.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\DrunCan.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Elevator_Left.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Elevator_Right.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\EnemyPlane.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Fence.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Center_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Center_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Center_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Top_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Top_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Top_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Under_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceVerticalPlank_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceVerticalPlank_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceVerticalPlank_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceVerticalPlank_04.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\floor.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Fuel.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\GalleryRound_flatfloor.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\GalleryRound_flatfloor_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\GalleryRound_flatfloor_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Gool.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\GrandCanyon.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Ground.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\heart.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\hikouki.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\HorizontalStabilizer.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_04.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_05.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_06.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_07.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <None Include="Resources\Models\fbx\House_02_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_04.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_05.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_06.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_07.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_08.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_09.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_10.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </None>
+    <MeshContentTask Include="Resources\Models\fbx\House_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_04.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_05.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_06.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_07.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_08.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_09.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_10.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_11.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_12.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_13.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_14.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_15.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_16.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_test.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\MinStoneFloor.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Nebura.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Propeller.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\PropellerSupportLeft.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\PropellerSupportRight.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Propeller_Left.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Rocket.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Room.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Room_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Rudder.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Satellite2.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Sphere.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StoneFloor.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StoneStairs_02.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StoneStairs_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StoneStairs_04.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StreetLight.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StreetLightConnection.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StreetLightFoundation.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StreetLightLight.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\SupplyPoint.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Tail.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Tire.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\toyPlane.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Tree_01.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\TurretBase.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\TurretCancer.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\TurretHead.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\wheelSupport.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillBlade.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillFoundation.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillRoom.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillStairs.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillTower.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillWheel.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Wing.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WitherTree_03.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\yuuy.fbx">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </MeshContentTask>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\Microsoft.XAudio2.Redist.1.2.11\build\native\Microsoft.XAudio2.Redist.targets" Condition="Exists('packages\Microsoft.XAudio2.Redist.1.2.11\build\native\Microsoft.XAudio2.Redist.targets')" />
+    <Import Project="packages\directxtk_desktop_2019.2023.3.30.1\build\native\directxtk_desktop_2019.targets" Condition="Exists('packages\directxtk_desktop_2019.2023.3.30.1\build\native\directxtk_desktop_2019.targets')" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\MeshContentTask.targets" />
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\ImageContentTask.targets" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.XAudio2.Redist.1.2.11\build\native\Microsoft.XAudio2.Redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.XAudio2.Redist.1.2.11\build\native\Microsoft.XAudio2.Redist.targets'))" />
+    <Error Condition="!Exists('packages\directxtk_desktop_2019.2023.3.30.1\build\native\directxtk_desktop_2019.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\directxtk_desktop_2019.2023.3.30.1\build\native\directxtk_desktop_2019.targets'))" />
+  </Target>
+</Project>

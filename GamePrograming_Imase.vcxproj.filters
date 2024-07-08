@@ -1,0 +1,2483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>710ace21-484c-4451-856a-4ec1380615f7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>c41cedcb-9fdb-49d4-8fa8-c119f8de6ce1</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dds;dlg;fbx;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{b805a4d0-1063-4499-8f0a-e734fb9df3df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\FBX">
+      <UniqueIdentifier>{bdac67a8-6265-49af-b0db-46da93101c62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shaders">
+      <UniqueIdentifier>{fe89f16a-424c-498b-8c61-ce144c5cee07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shaders\2D">
+      <UniqueIdentifier>{dba06d18-d4d4-4bcf-937e-c6b8b796799e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Texture">
+      <UniqueIdentifier>{9b5ae5a8-6d02-44b0-8a4c-e71f5cc45659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Texture\NormalMap">
+      <UniqueIdentifier>{f1c4d07b-cd1c-4cb9-86b6-fb843c75c38a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode">
+      <UniqueIdentifier>{e8e4ebe1-c725-4a12-8735-747aa7a0a894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects">
+      <UniqueIdentifier>{84d9391e-f400-4394-9dbc-9ed51c12bc7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene">
+      <UniqueIdentifier>{7a608797-a63e-4e39-95f4-a7872e54e20b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character">
+      <UniqueIdentifier>{46a6b4ed-321d-45b3-a9d9-a570924c22d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Player">
+      <UniqueIdentifier>{10d160e4-7b6b-4241-8c26-2b90258d2fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Player\PlayerState">
+      <UniqueIdentifier>{d77fb11d-b6e5-43f6-ac07-9c7d9b16dcdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts">
+      <UniqueIdentifier>{3143e1d2-1742-432c-b6e6-d762be1d0a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts">
+      <UniqueIdentifier>{3f3d945b-7487-4445-ae1c-5de72c6c7c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy">
+      <UniqueIdentifier>{187f74d7-3c8d-48ff-9bd4-bead0acfd42d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Plane">
+      <UniqueIdentifier>{d90575ad-b0d5-48dd-8a7d-e9868d0215bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState">
+      <UniqueIdentifier>{4e7826a8-1ddd-439f-82a6-c67f804e5537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Turret">
+      <UniqueIdentifier>{7ca30bf4-b4e1-4492-8f4b-99f795673cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts">
+      <UniqueIdentifier>{b79df412-d59f-47f8-8e64-6efad01353d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts">
+      <UniqueIdentifier>{94f3f67d-4ebb-4bd3-b350-d822b55bdb71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState">
+      <UniqueIdentifier>{be727370-1753-412c-a7b0-bf7447c0572a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot">
+      <UniqueIdentifier>{e45eb205-624f-4d91-a773-0518b026f731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts">
+      <UniqueIdentifier>{0a7db04b-0e95-4322-9e2c-573aa11fa2a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts\Parts">
+      <UniqueIdentifier>{f1744655-179c-4861-a7ff-38684db81770}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState">
+      <UniqueIdentifier>{c37e8b5a-f106-4667-9495-c320f73a13dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Airship">
+      <UniqueIdentifier>{3629714a-6e96-49e0-b1ab-9dda45e5bd23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts">
+      <UniqueIdentifier>{f94d72a8-b7ce-47e7-990c-108357bc05df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts">
+      <UniqueIdentifier>{003c4044-ef86-41e6-9031-f8a287879eb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState">
+      <UniqueIdentifier>{1067e933-ae15-4caf-9908-cdd78e2393d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState\States">
+      <UniqueIdentifier>{0900d2b9-4cce-4077-837d-276a8b29350b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Bullet">
+      <UniqueIdentifier>{4ca44180-6a89-435f-b347-5b06e77258ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Bullet\Factory">
+      <UniqueIdentifier>{105ac52c-b773-4121-9ec7-4d9d4a022c94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel">
+      <UniqueIdentifier>{00737183-c7be-4fe9-a8e7-2828e58bcc71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\item">
+      <UniqueIdentifier>{2c420511-7b23-4666-aa32-c75da40476ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\item\Coin">
+      <UniqueIdentifier>{02e5ed06-2f12-4ed6-bce8-dd1fae4a81ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\item\Respawn">
+      <UniqueIdentifier>{25a7b5ae-3696-444d-a64d-03b98b08c220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\item\HP&amp;FuleSupplyPoint">
+      <UniqueIdentifier>{500a7299-024c-4320-a7d4-2ab3a9a420d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects">
+      <UniqueIdentifier>{c329644e-fdcb-4e23-99cb-6dfcf8cb2922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects">
+      <UniqueIdentifier>{fe646e1c-96ff-44e0-8197-3b460712ce72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench">
+      <UniqueIdentifier>{9d3c17e2-a77e-4d53-847f-cb8458db43ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts">
+      <UniqueIdentifier>{53bc5450-3407-4da8-8066-6e53ead9a8e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts">
+      <UniqueIdentifier>{a1a19dae-243f-4711-9f3c-743319c4c14c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight">
+      <UniqueIdentifier>{604365f4-97d1-47d8-bf96-cbc3433de83d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts">
+      <UniqueIdentifier>{0892ce5e-e5d2-40ca-acb3-751dab4fed54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts\Parts">
+      <UniqueIdentifier>{59302213-a5dd-4970-97d3-7b21d8c0dded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill">
+      <UniqueIdentifier>{8bc56f74-47e2-44b0-95a5-484d3985ef82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts">
+      <UniqueIdentifier>{3d6b6959-1e01-482b-9d44-ce0a74010516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts">
+      <UniqueIdentifier>{a209212e-37ca-4619-a14c-30029e4b2902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\MoveObjects">
+      <UniqueIdentifier>{b7f4e97a-b0bb-4ace-bd78-c0b07bd18273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\MoveObjects\MoveObjectsParts">
+      <UniqueIdentifier>{52d0dd30-1b2d-4040-a44f-16ceb9aed5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence">
+      <UniqueIdentifier>{6dc59d58-0451-400b-837a-6efa5423f41d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts">
+      <UniqueIdentifier>{3ea47887-d6e7-4d50-90ae-3f2dfdf19ca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts">
+      <UniqueIdentifier>{f440eebf-71b2-4b5b-93cc-a8a2c6989b48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\HouseMoveObjects">
+      <UniqueIdentifier>{43b05e31-baac-4318-89fa-340cd8e14148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects">
+      <UniqueIdentifier>{5343e0d6-4d50-4e4a-b1e2-849e936d62e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House">
+      <UniqueIdentifier>{75edb6d7-bfec-480a-8d0c-cacfd2aa8306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\Walls">
+      <UniqueIdentifier>{e0bb0c62-4b89-4202-b6fd-f66df76305a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\Walls\BigBrickWall">
+      <UniqueIdentifier>{8146fa93-a62a-457e-9198-4c2636db2fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\StoneStairs">
+      <UniqueIdentifier>{49ae6f74-6942-495e-9ff5-8b7f615ba636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Effect">
+      <UniqueIdentifier>{bef7bb0f-48b1-4fdd-a2e5-10b00d0656fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Ground">
+      <UniqueIdentifier>{d23a9a69-55cd-4e51-b4be-3c29e275390c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Sandstorm">
+      <UniqueIdentifier>{f9959138-bc14-486f-a366-56934f0a1537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Collision">
+      <UniqueIdentifier>{8d74278b-4fa3-45f5-b0da-0681b47a4e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Collision\CollisionOLL">
+      <UniqueIdentifier>{d6643fe3-84aa-4701-a428-e16cd1d8b7b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\Sun">
+      <UniqueIdentifier>{a3b51ea9-93dc-4a1d-a944-921fd45ca372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\PlayScene\ShadowMap">
+      <UniqueIdentifier>{c86de01b-efd9-40f4-a8dd-a6bcda317306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI">
+      <UniqueIdentifier>{fd9c8f81-598c-4226-a2d6-83287458c95e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\Letter">
+      <UniqueIdentifier>{cd079f93-e0bc-4a3a-9bd1-cbfb41470bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\Letter\returnLetter">
+      <UniqueIdentifier>{54221860-812d-4ed5-9733-71ee9488bf4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\UnderBar">
+      <UniqueIdentifier>{1d85dc2e-c109-4a39-acbc-f2298f8c9d5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\OperationInstructions">
+      <UniqueIdentifier>{ac5cbb1f-7ce9-4ff9-ab4f-820592f75e37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\Timer">
+      <UniqueIdentifier>{f67a047c-4b84-4f17-873d-a9ef160c0fed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\Gauegs">
+      <UniqueIdentifier>{237acf3f-31c1-4968-98bf-28cb18a80b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\MenuBackGroundUI">
+      <UniqueIdentifier>{f7460c18-da30-47b9-bef2-550cae0d3208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\Fade">
+      <UniqueIdentifier>{af8fc6d5-9b87-4117-8be7-3382e03d3fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\TutorialLetter">
+      <UniqueIdentifier>{a6bbb35c-f832-459c-9155-1ba2e033d185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI">
+      <UniqueIdentifier>{f0421f57-0f52-47cf-a522-1e2b9bba1bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order">
+      <UniqueIdentifier>{dbebc373-6090-490e-99d4-abe55336c36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise">
+      <UniqueIdentifier>{afd2f537-f1ab-4c27-889a-853a33dca998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\BaclGround">
+      <UniqueIdentifier>{043da6e8-1c10-4156-a1f3-c7df8f98e5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\Camera">
+      <UniqueIdentifier>{f069461e-cdff-4a3e-a951-a3f57a368477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\Camera\PlaySceneCamera">
+      <UniqueIdentifier>{f3124bd2-3c1f-4998-9a50-25d02134a4b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\Camera\PlaySceneCamera\Type">
+      <UniqueIdentifier>{fe5ce041-24cd-45b1-9805-8fd0a5a3ddb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\Camera\PlaySceneCamera\Factory">
+      <UniqueIdentifier>{e87bae93-5901-49b2-b8c5-449dfb3d44e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\ScoreCalculation">
+      <UniqueIdentifier>{3930ddba-e834-4eb0-91bb-8a71aea3e819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\SelectScene">
+      <UniqueIdentifier>{8351d7c3-ebb5-4b08-b9a2-02ef30609308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\Singleton">
+      <UniqueIdentifier>{3d840264-a4d0-44bb-bd68-f59b6e24408d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameObjects\Particle">
+      <UniqueIdentifier>{41295f5d-6fa0-4f0e-9497-4024199f8084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes">
+      <UniqueIdentifier>{d9ee7358-3f0e-4fc1-969a-1a4a868c3294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\PlayScene">
+      <UniqueIdentifier>{ab5e3db4-f9d2-4304-906a-4475035d8d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\PlayScene\Scene">
+      <UniqueIdentifier>{8a9b131e-71ca-4955-9325-93bc59c9ea02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\HomeScene">
+      <UniqueIdentifier>{a033b596-0759-44c4-bda4-268f6bb32215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\HomeScene\HomeState">
+      <UniqueIdentifier>{c29ed6fa-a2d0-4b85-ba7d-8625d947d603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene">
+      <UniqueIdentifier>{c1e0320f-15fb-4f6d-b4ad-17c89fd2b4a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState">
+      <UniqueIdentifier>{f4c506d2-41f7-4a88-ad11-5a0a5a972693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene">
+      <UniqueIdentifier>{35dc2312-3ed3-428b-afb1-b1204a1a0816}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption">
+      <UniqueIdentifier>{55f3a880-d578-4f77-957a-8bed5a7f5f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene">
+      <UniqueIdentifier>{7030307e-7263-4072-ab3d-1552f2fe73f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome">
+      <UniqueIdentifier>{0f9b4a20-3f1f-428a-99c4-1e6efa0a661c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\OperationInstructionsScene">
+      <UniqueIdentifier>{01465d9d-59c6-4ec0-985e-565e8e896904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\ResultScene">
+      <UniqueIdentifier>{7b04d14d-33f8-4fd7-8051-6eeada5dc4ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\TitleScene">
+      <UniqueIdentifier>{971c1d45-9ec5-4f10-9dfd-69ee8dceddaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\SelectScenes">
+      <UniqueIdentifier>{d051753a-c114-43be-8509-a4bce08a2531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\SelectScenes\StageSelect">
+      <UniqueIdentifier>{a35ea4cc-d51b-4911-9494-3aebb1852c44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\SelectScenes\StageSelect\StateSelectScene">
+      <UniqueIdentifier>{d2e3e9d5-bd55-4110-a628-e545c27a41f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\SelectScenes\MenuSelect">
+      <UniqueIdentifier>{b7c75391-0de7-47ee-90e2-05051af94585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene">
+      <UniqueIdentifier>{52704e88-ed20-4ae3-b9ec-9254b397b179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\SelectScenes\PauseSelect">
+      <UniqueIdentifier>{3157bd30-3678-4733-aa4e-5a4a81d147a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\SelectScenes\StageSelectScene">
+      <UniqueIdentifier>{f120dd58-a5cb-4abb-ab66-8f10d29b7406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceCode\GameScenes\GameTitleScene">
+      <UniqueIdentifier>{cd271643-94cc-40aa-9678-9f03298c4c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shaders\3Dグラフィック">
+      <UniqueIdentifier>{f9064d76-908a-40af-85fc-a290bdbae38e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemClass">
+      <UniqueIdentifier>{fb0d8891-0f16-4096-a768-9267cd19256f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemClass\json">
+      <UniqueIdentifier>{72668017-4200-4aa1-b62b-06be42aa49c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\Player.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\PlayerEffect.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\LightEffect.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Background\Background.h">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Background\GrandCanyon.h">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Background\Nebura.h">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Background\Satellite.h">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Camera\TitleCamera.h">
+      <Filter>SourceCode\GameObjects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StageSelect\StageSelect.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\Bullet.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\BulletManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\IPlayerComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\IPlayerPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\IState.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\IStatePlayerFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerKillMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\StatePlayerFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyKillMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\IStateEnemyFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\StateEnemyFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Ground.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StageSelect\ISelectPlayScene.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelect\StateSelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\Letter\StageSelectLetter.h">
+      <Filter>SourceCode\GameObjects\UI\Letter</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\MenuSelect\StateManuScene\StageSelectScen.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\MenuSelect\StateManuScene\StateMenuScene.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\MenuSelect\MenuSelect.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\BloodEffect.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\UnderBar\UnderBar.h">
+      <Filter>SourceCode\GameObjects\UI\UnderBar</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\MenuSelect\StateManuScene\OptionSelectScene.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\MenuSelect\StateManuScene\TitleSelectScene.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerStopMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerAvoidanceMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\Airship.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipCustom_00.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\IAirshipComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\IAirshipPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\IStateAirshipFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\StateAirshipFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\IAirshipState.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipBody.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipElevator_Left.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipElevatorRight.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerSupportLeft.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerSupportRight.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRoom_1.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRoom_2.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRudder.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerRight.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerLeft.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerMiddle.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\House.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\Windmill.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillFoundation.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\IWindmillPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\IWindmillComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillRoom.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillTower.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillBlade_02.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillBlade_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillStairs.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\SmokeEffect.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\AirshipMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\AirshipMotion_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Camera\StageSelectCamera.h">
+      <Filter>SourceCode\GameObjects\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion_02.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\Letter\SpaseLetter.h">
+      <Filter>SourceCode\GameObjects\UI\Letter</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\Bullet_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\Bullet_02.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Background\CityNight.h">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Body.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\HorizontalStabilizer.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\LeftTire.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Propeller.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\RightTire.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Tail.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\WheelSupport.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Wing.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLight.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\IStreetLightPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\IStreetLightComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightConnection.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightFoundation.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightLight.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\Bench.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchBackWood.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchFrame_Left.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\IBenchPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchFrame_Right.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchUnderWood.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Effect\SandstormEffect.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Sandstorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\BlackFloor.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\Floor.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Background\CloudyBackGround.h">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_02.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_03.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyCustom_00.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurretCustom_00.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurretManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\Turret.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\TurretMotion_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\StateTurretFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\TurretKillMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\ITurretComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\ITurretPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\IStateTurretFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\ITurretState.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretBase.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Left.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Middle.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Right.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretHead.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Bullet\Bullet_Turret.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Colliider\Collision.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Colliider\CollisionOLL.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Collision\CollisionOLL</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\ICrabRobotComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\ICrabRobotPartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\IStateCrabRobotFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\StateCrabRobotFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\CrabRobotKillMotion.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\CrabRobotMotion_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\ICrabRobotState.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobot.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotCustom_00.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotHead.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StageSelect\SelectTown.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelect\StateSelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\StoneFloor.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\MinStoneFloor\MinStoneFloor.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Ground\Floor\FloorManagers\FloorManager_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Houses\House_03.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Houses\House_02.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Walls\BigBrickWall\BigBrickWall.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\Walls\BigBrickWall</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\StoneStairs\StoneStairs.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\StoneStairs</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\Item.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\OperationInstructions\OperationInstructionsScene.h">
+      <Filter>SourceCode\GameScenes\OperationInstructionsScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\OperationInstructions\OperationInstructionsUI.h">
+      <Filter>SourceCode\GameObjects\UI\OperationInstructions</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\ScoreCalculation\ScoreCalculation.h">
+      <Filter>SourceCode\GameObjects\ScoreCalculation</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Sandstorm\SandstormManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Sandstorm</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\Gaueg.h">
+      <Filter>SourceCode\GameObjects\UI\Gauegs</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\Timer\Timer.h">
+      <Filter>SourceCode\GameObjects\UI\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\Letter\returnLetter\ReturnLetter.h">
+      <Filter>SourceCode\GameObjects\UI\Letter\returnLetter</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\MenuBackGround\MenuBackGroundUI.h">
+      <Filter>SourceCode\GameObjects\UI\MenuBackGroundUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\TransitionState.h">
+      <Filter>SourceCode\GameObjects\UI\Fade</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\FreeUi\FreeUi.h">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StageSelect\Tutorial.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelect\StateSelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\PlayScene\PlayScene.h">
+      <Filter>SourceCode\GameScenes\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\Timer\Score.h">
+      <Filter>SourceCode\GameObjects\UI\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\PlaySceneCamera.h">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\DeathCamera.h">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\NormalCamera.h">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\StatePlaySceneCamera.h">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera\Type</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\TutorialUI.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\BenchStreetLightGet.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\CoinGet.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\WASDQEmove.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ShiftStopLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\IStateTutorialUI.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\NiceLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ScoreUpLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\WelcomeToTownLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\RecoveryItemsGet.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\Time3minutesLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ChallengeLimitsLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\EnemyAndDesScoreLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\LetIsRecoverLetter.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\TutorialScene\OperationTaskUI.h">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\SwayUserInterface.h">
+      <Filter>SourceCode\GameObjects\UI\Letter</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Character\Player\PlayerTurbMode.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Sun\Sun.h">
+      <Filter>SourceCode\GameObjects\PlayScene\Sun</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Walls\BigBrickWall\BigBrickWallManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\Walls\BigBrickWall</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\PauseSelect\PauseSelect.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\PauseSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\PauseSelect\StatePauseScene\PauseSelectStart.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\PauseSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\PauseSelect\StatePauseScene\PauseStageSelectScen.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\PauseSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SelectScene\PauseSelect\StatePauseScene\StatePauseScene.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\PauseSelect</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\PlayerCameraFactory.h">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\IPlayerCameraFactory.h">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\SelectScene\SelectPlayer.h">
+      <Filter>SourceCode\GameObjects\SelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\SelectScene\Palace\Palace.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\StateOptionScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption\ChangeSoundOptionScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption\ChangeDrawOptionScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateDrawOptionScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateSoundOptionScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateOptionScene\OptionScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StatePlayerCustomScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateStageSelectScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\StateHomeScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangePlayerCustomScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeStageSelectScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeOptionScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\UI\Gaueg\VolumeGaueg.h">
+      <Filter>SourceCode\GameObjects\UI\Gauegs</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeHomeReturnScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeNoneScene.h">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\PlayScene\TutorialScene.h">
+      <Filter>SourceCode\GameScenes\PlayScene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\PlayScene\TownScene.h">
+      <Filter>SourceCode\GameScenes\PlayScene\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\PlayScene\PausedScreen.h">
+      <Filter>SourceCode\GameScenes\PlayScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Objects.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\ObjectsManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\CoinManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\Coin.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\Coin</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\Respawn.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\Respawn</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\RespawnManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\Respawn</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\HpSupplyPoint.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\HP&amp;FuleSupplyPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\FuelSupplyPoint.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\HP&amp;FuleSupplyPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\Item\SupplyPointManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\HP&amp;FuleSupplyPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameTitle.h">
+      <Filter>SourceCode\GameScenes\GameTitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjectsManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\MoveObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjects.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\MoveObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjectsParts\IMoveObjectsComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\MoveObjects\MoveObjectsParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjectsParts\MoveObjectsComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\MoveObjects\MoveObjectsParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\Fence.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Center_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FencePartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\IFencePartFactory.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Top_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Under_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceVerticalPlank_01.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ShadowMap\CascadeShadowMapManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ShadowMap\CascadeShadowMap.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\assertions.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\config.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\forwards.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\json.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\json_features.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\reader.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\value.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\version.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\writer.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Json\json\allocator.h">
+      <Filter>SystemClass\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjectsManager.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\HouseMoveObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjects.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\HouseMoveObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\IHouseMoveObjectsComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\HouseMoveObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjectsComponent.h">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\HouseMoveObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemClass\KeyboardName.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Models\SingletonDeviceResources.h">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\GaugeManager.h">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\MoveUserInterface.h">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\NumberManager.h">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\OperationUI.h">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\UserInterface.h">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\Transition.h">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\Particle.h">
+      <Filter>SourceCode\GameObjects\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\ParticleSandstorm.h">
+      <Filter>SourceCode\GameObjects\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\ParticleUtility.h">
+      <Filter>SourceCode\GameObjects\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\BinaryFile.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\DebugCamera.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\DebugFont.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\SceneManager.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\DepthStencil.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="ImaseLib\RenderTexture.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\FiniteStateMachine.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="UserResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadData.h">
+      <Filter>SystemClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\ResultScene.h">
+      <Filter>SourceCode\GameScenes\ResultScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene.h">
+      <Filter>SourceCode\GameScenes\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\StageSelectScene.h">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelectScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Models\Draw.h">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Models\KeyboardTracker.h">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Models\Resources.h">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\GameObjects\Models\Textures.h">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\Player.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\PlayerEffect.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\LightEffect.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Background\GrandCanyon.cpp">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Background\Background.cpp">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Background\Satellite.cpp">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Background\Nebura.cpp">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Camera\TitleCamera.cpp">
+      <Filter>SourceCode\GameObjects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StageSelect\StageSelect.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\BulletManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\Bullet.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerKillMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerPartFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\StatePlayerFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyKillMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\StateEnemyFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Ground.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StageSelect\ISelectPlayScene.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelect\StateSelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\Letter\StageSelectLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\Letter</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\MenuSelect\StateManuScene\StateMenuScene.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\MenuSelect\StateManuScene\StageSelectScen.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\MenuSelect\MenuSelect.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\BloodEffect.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\UnderBar\UnderBar.cpp">
+      <Filter>SourceCode\GameObjects\UI\UnderBar</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\MenuSelect\StateManuScene\OptionSelectScene.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\MenuSelect\StateManuScene\TitleSelectScene.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\MenuSelect\StateManuScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerStopMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerAvoidanceMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\Airship.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipCustom_00.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPartFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\StateAirshipFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipBody.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipElevator_Left.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipElevatorRight.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerSupportLeft.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerSupportRight.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRoom_1.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRoom_2.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipRudder.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerRight.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerMiddle.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipParts\AirshipPropellerLeft.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\House.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\Windmill.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillFoundation.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillPartFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillTower.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillRoom.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillBlade_02.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillBlade_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Windmill\WindmillParts\WindmillStairs.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Windmill\WindmillParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\SmokeEffect.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\AirshipMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Airship\AirshipState\AirshipMotion_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Airship\AirshipState\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Camera\StageSelectCamera.cpp">
+      <Filter>SourceCode\GameObjects\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyMotion_02.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane\EnemyState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\Letter\SpaseLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\Letter</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\Bullet_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\Bullet_02.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Background\CityNight.cpp">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Body.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\HorizontalStabilizer.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\LeftTire.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Propeller.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\RightTire.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Tail.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\WheelSupport.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Wing.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLight.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightPartFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightConnection.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightFoundation.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\StreetLight\StreetLightParts\StreetLightLight.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\StreetLight\StreetLightParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\Bench.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchBackWood.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchFrame_Left.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchPartFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchFrame_Right.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Bench\BenchParts\BenchUnderWood.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Bench\BenchParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Sandstorm\SandstormManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Sandstorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Effect\SandstormEffect.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Sandstorm</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\BlackFloor.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\Floor.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Background\CloudyBackGround.cpp">
+      <Filter>SourceCode\GameObjects\BaclGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_02.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\Enemy_03.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyCustom_00.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Enemy\EnemyManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Plane</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurretManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\Turret.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurretCustom_00.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\TurretMotion_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\StateTurretFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretState\TurretKillMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TureetState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretPartFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretBase.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Left.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Middle.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretCancer_Right.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Turret\TurrretParts\TurretHead.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\Turret\TurretParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Bullet\Bullet_Turret.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Colliider\Collision.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Colliider\CollisionOLL.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Collision\CollisionOLL</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotPartFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\StateCrabRobotFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\CrabRobotKillMotion.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotState\CrabRobotMotion_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotCustom_00.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobot.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\CrabRobot\CrabRobotParts\CrabRobotHead.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Enemy\CrabRobot\CrabRobotParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StageSelect\SelectTown.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelect\StateSelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\StoneFloor.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\MinStoneFloor\MinStoneFloor.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Ground\Floor\FloorManagers\FloorManager_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Houses\House_02.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Houses\House_03.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Walls\BigBrickWall\BigBrickWall.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\Walls\BigBrickWall</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\StoneStairs\StoneStairs.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\StoneStairs</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\Item.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\OperationInstructions\OperationInstructionsScene.cpp">
+      <Filter>SourceCode\GameScenes\OperationInstructionsScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\OperationInstructions\OperationInstructionsUI.cpp">
+      <Filter>SourceCode\GameObjects\UI\OperationInstructions</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\ScoreCalculation\ScoreCalculation.cpp">
+      <Filter>SourceCode\GameObjects\ScoreCalculation</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\Gaueg.cpp">
+      <Filter>SourceCode\GameObjects\UI\Gauegs</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\Timer\Timer.cpp">
+      <Filter>SourceCode\GameObjects\UI\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\Letter\returnLetter\ReturnLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\Letter\returnLetter</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\MenuBackGround\MenuBackGroundUI.cpp">
+      <Filter>SourceCode\GameObjects\UI\MenuBackGroundUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\TransitionState.cpp">
+      <Filter>SourceCode\GameObjects\UI\Fade</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\FreeUi\FreeUi.cpp">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StageSelect\Tutorial.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelect\StateSelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\PlayScene\PlayScene.cpp">
+      <Filter>SourceCode\GameScenes\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\Timer\Score.cpp">
+      <Filter>SourceCode\GameObjects\UI\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Camera\PlaySceneCamera\PlaySceneCamera.cpp">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\DeathCamera.cpp">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\NormalCamera.cpp">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera\Type</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\TutorialUI.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\BenchStreetLightGet.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\CoinGet.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\WASDQEmove.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ShiftStopLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\NiceLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ScoreUpLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\WelcomeToTownLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\RecoveryItemsGet.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Order</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\ChallengeLimitsLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\EnemyAndDesScoreLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\Time3minutesLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\TutorialLetter\StateTutorialUI\LetIsRecoverLetter.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter\StateTutorialLUI\Praise</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\TutorialScene\OperationTaskUI.cpp">
+      <Filter>SourceCode\GameObjects\UI\TutorialLetter</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\SwayUserInterface.cpp">
+      <Filter>SourceCode\GameObjects\UI\Letter</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Character\Player\PlayerTurbMode.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Character\Player\PlayerState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Sun\Sun.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\Sun</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects\Walls\BigBrickWall\BigBrickWallManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\Walls\BigBrickWall</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\PauseSelect\PauseSelect.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\PauseSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\PauseSelect\StatePauseScene\PauseSelectStart.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\PauseSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\PauseSelect\StatePauseScene\PauseStageSelectScen.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\PauseSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SelectScene\PauseSelect\StatePauseScene\StatePauseScene.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\PauseSelect</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Camera\PlaySceneCamera\Type\PlayerCameraFactory.cpp">
+      <Filter>SourceCode\GameObjects\Camera\PlaySceneCamera\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\SelectScene\SelectPlayer.cpp">
+      <Filter>SourceCode\GameObjects\SelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\SelectScene\Palace\Palace.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects\House</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\StateOptionScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption\ChangeDrawOptionScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption\ChangeSoundOptionScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState\StateOptionScene\ChangeStateOption</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateDrawOptionScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionState\StateSoundOptionScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene\OptionState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateOptionScene\OptionScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateOptionScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StatePlayerCustomScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateStageSelectScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\StateHomeScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangePlayerCustomScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeStageSelectScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeOptionScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\UI\Gaueg\VolumeGaueg.cpp">
+      <Filter>SourceCode\GameObjects\UI\Gauegs</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeHomeReturnScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\HomeScene\HomeState\StateHomeScene\ChangeStateHome\ChangeNoneScene.cpp">
+      <Filter>SourceCode\GameScenes\HomeScene\HomeState\StateHomeScene\ChangeStateHome</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\PlayScene\TownScene.cpp">
+      <Filter>SourceCode\GameScenes\PlayScene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\PlayScene\TutorialScene.cpp">
+      <Filter>SourceCode\GameScenes\PlayScene\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\PlayScene\PausedScreen.cpp">
+      <Filter>SourceCode\GameScenes\PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Objects.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\ObjectsManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\RemoveObkects</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\CoinManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\Coin.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\Coin</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\Respawn.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\Respawn</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\RespawnManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\Respawn</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\HpSupplyPoint.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\HP&amp;FuleSupplyPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\FuelSupplyPoint.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\HP&amp;FuleSupplyPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\Item\SupplyPointManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\item\HP&amp;FuleSupplyPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameTitle.cpp">
+      <Filter>SourceCode\GameScenes\GameTitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjectsManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\MoveObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\MoveObjects\MoveObjects.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\MoveObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\Fence.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Center_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FencePartFactory.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Under_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceVerticalPlank_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\Fence\FenceParts\FenceNailPlank_Top_01.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\Fence\FenceParts\Parts</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ShadowMap\CascadeShadowMap.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ShadowMap\CascadeShadowMapManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjects.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\HouseMoveObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\PlayScene\ObjectModel\HouseMoveObjects\HouseMoveObjectsManager.cpp">
+      <Filter>SourceCode\GameObjects\PlayScene\ObjectModel\Objects\MoveObjects\HouseMoveObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemClass\KeyboardName.cpp">
+      <Filter>SystemClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Models\SingletonDeviceResources.cpp">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\GaugeManager.cpp">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\MoveUserInterface.cpp">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\NumberManager.cpp">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\OperationUI.cpp">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\Transition.cpp">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\UserInterface.cpp">
+      <Filter>SourceCode\GameObjects\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\Particle.cpp">
+      <Filter>SourceCode\GameObjects\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\ParticleSandstorm.cpp">
+      <Filter>SourceCode\GameObjects\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\ParticleUtility.cpp">
+      <Filter>SourceCode\GameObjects\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\BinaryFile.cpp">
+      <Filter>SystemClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\DebugCamera.cpp">
+      <Filter>SystemClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\DebugFont.cpp">
+      <Filter>SystemClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\RenderTexture.cpp">
+      <Filter>SystemClass</Filter>
+    </ClCompile>
+    <ClCompile Include="ImaseLib\DepthStencil.cpp">
+      <Filter>SystemClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\ResultScene.cpp">
+      <Filter>SourceCode\GameScenes\ResultScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleScene.cpp">
+      <Filter>SourceCode\GameScenes\TitleScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\StageSelectScene.cpp">
+      <Filter>SourceCode\GameScenes\SelectScenes\StageSelectScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Models\Draw.cpp">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Models\KeyboardTracker.cpp">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Models\Resources.cpp">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\GameObjects\Models\Textures.cpp">
+      <Filter>SourceCode\GameObjects\Singleton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest">
+      <Filter>Assets</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Shaders\Shadow\Shadow\SM_Common.hlsli">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </None>
+    <None Include="Resources\Shaders\Gauge.hlsli">
+      <Filter>Resources\Shaders\2D</Filter>
+    </None>
+    <None Include="Resources\Shaders\Number.hlsli">
+      <Filter>Resources\Shaders\2D</Filter>
+    </None>
+    <None Include="Resources\Shaders\OperationUI.hlsli">
+      <Filter>Resources\Shaders\2D</Filter>
+    </None>
+    <None Include="Resources\Shaders\Particle.hlsli">
+      <Filter>Resources\Shaders\2D</Filter>
+    </None>
+    <None Include="Resources\Shaders\Transition.hlsli">
+      <Filter>Resources\Shaders\2D</Filter>
+    </None>
+    <None Include="Resources\Shaders\UI.hlsli">
+      <Filter>Resources\Shaders\2D</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_04.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_05.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_06.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_07.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_08.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_09.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+    <None Include="Resources\Models\fbx\House_02_10.fbx">
+      <Filter>Resources\FBX</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_No_Picture_VS_Depth.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_PS.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_PS_Depth.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_VS.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_VS_Depth.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_No_Picture_PS.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_No_Picture_PS_Depth.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_No_Picture_VS.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\Shadow\Shadow\SM_GS_01.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\GaugeGS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\GaugePS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\GaugeVS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\NumberGS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\NumberPS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\NumberVS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\OperationTaskUIPS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\OperationUIGS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\OperationUIPS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\OperationUIVS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ParticleGS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ParticlePS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ParticleVS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\ShadowPS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\SwayUIPS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\TransitionGS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\TransitionPS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\TransitionVS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\UIGS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\UIPS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\UIVS.hlsl">
+      <Filter>Resources\Shaders\2D</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shaders\LightEffectsPS.hlsl">
+      <Filter>Resources\Shaders\3Dグラフィック</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MeshContentTask Include="Resources\Models\fbx\yuuy.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\chear.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Cyber1.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\EnemyPlane.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\floor.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Gool.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\heart.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\hikouki.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Nebura.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Propeller.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Rocket.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Satellite2.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\SupplyPoint.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\toyPlane.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Wing.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\GrandCanyon.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Tail.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\HorizontalStabilizer.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Body.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Ground.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Tree_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Cube.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WitherTree_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Body2.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Sphere.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\wheelSupport.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Tire.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\AirshipBody.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Propeller_Left.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Rudder.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Room.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Elevator_Right.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Elevator_Left.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Room_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\PropellerSupportLeft.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\PropellerSupportRight.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillTower.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillBlade.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillWheel.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillFoundation.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillRoom.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\WindmillStairs.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CityNight.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StreetLightFoundation.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StreetLightLight.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StreetLightConnection.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BenchUnderWood.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BenchFrame.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BenchBackWood.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CloudyBackGround.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BlackFloor.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\TurretBase.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\TurretHead.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\TurretCancer.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotThigh_RightFront.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotLeg_RightBack.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotCalf_RightBack.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotThigh_RightBack.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotLeg_LeftFroat.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotCalf_LeftFroat.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotThigh_LeftFroat.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotLeg_LeftBack.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotCalf_LeftBack.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotThigh_LeftBack.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotHead.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotLeg_RightFront.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\CrabRobotCalf_RightFront.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StoneStairs_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Bullet_04.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StoneFloor.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\MinStoneFloor.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\BigBrickWall.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\DrunCan.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\GalleryRound_flatfloor.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\GalleryRound_flatfloor_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StoneStairs_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Bench.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Fence.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceVerticalPlank_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Center_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Center_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Top_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Center_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Top_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Under_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceNailPlank_Top_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceVerticalPlank_04.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceVerticalPlank_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\FenceVerticalPlank_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Fuel.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StreetLight.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\StoneStairs_04.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\Coin.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_test.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_11.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_10.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_09.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_08.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_07.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_06.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_05.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_04.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_16.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_15.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_14.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_13.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_03_12.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_04.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_02.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_01.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_07.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_06.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\House_01_05.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+    <MeshContentTask Include="Resources\Models\fbx\GalleryRound_flatfloor_03.fbx">
+      <Filter>Resources\FBX</Filter>
+    </MeshContentTask>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageContentTask Include="Resources\Models\png\NormalMap\NoNormalMap.jpg">
+      <Filter>Resources\Texture\NormalMap</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Resources\Models\png\NormalMap\House_01NormalMap.jpg">
+      <Filter>Resources\Texture\NormalMap</Filter>
+    </ImageContentTask>
+    <ImageContentTask Include="Resources\Models\png\House_01SpecularMap.jpg">
+      <Filter>Resources\Texture\NormalMap</Filter>
+    </ImageContentTask>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,35 @@
+{
+	"PlayerData" : 
+	[
+		{
+			"BULLET_COOL_TIME" : 
+			[
+				0.32499998807907104
+			],
+			"PLAYER_ACCELERATION" : 
+			[
+				0.0083333333333333332
+			],
+			"PLAYER_BEND_ACCELERATION" : 
+			[
+				0.10000000000000001
+			],
+			"PLAYER_MAX_FUEL" : 
+			[
+				5000
+			],
+			"PLAYER_MAX_HP" : 
+			[
+				20000
+			],
+			"PLAYER_MAX_SPEED" : 
+			[
+				0.25
+			],
+			"PLAYER_OFFENSIVE_POWER" : 
+			[
+				2
+			]
+		}
+	]
+}
