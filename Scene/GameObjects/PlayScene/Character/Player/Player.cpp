@@ -12,18 +12,18 @@
 
 using namespace DirectX;
 
-float Player::BULLET_COOL_TIME = 0.0f;		//‹…ƒN[ƒ‹ƒ^ƒCƒ€	(s)
-float Player::PLAYER_MAX_SPEED = (15.0f / 60);	//‘Oi‚ÌÅ‘åƒXƒs[ƒh(m/s)
-float Player::PLAYER_ACCELERATION = (0.5f / 60);	//‘Oi‚Ì‰Á‘¬“x		(m/s)
-float Player::PLAYER_BEND_ACCELERATION = (6.0f / 60);	//˜p‹È‚Ì‰Á‘¬“x		(‹/s)
-float Player::PLAYER_AIR_RESISTANCE = (0.99f);		//‹ó‹C’ïR
-float Player::PLAYER_BEND_AIR_RESISTANCE = (0.90f);		//˜p‹È‚Ì‹ó‹C’ïR
-float Player::PLAYER_STRAT_FALLING_SPEED = (10.0f / 60);	//—Ž‰ºŠJŽn‘¬“x		(m/s)
-float Player::PLAYER_FALL_SPEED__ACCELERATION = (0.1f / 60);	//—Ž‰º‚Ì‰Á‘¬“x		(m/s)
-float Player::PLAYER_FALL_SPEED_MAX = (30.0f / 60);	//—Ž‰º‚ÌÅ‘å‘¬“x	(m/s)
-int Player::PLAYER_MAX_HP = 20000;							//ƒvƒŒƒCƒ„[‚ÌHP
-int Player::PLAYER_MAX_FUEL = 5000;							//ƒvƒŒƒCƒ„[‚Ì”R—¿
-int Player::PLAYER_OFFENSIVE_POWER = 1;						//ƒvƒŒƒCƒ„[‚ÌUŒ‚—Í
+float Player::BULLET_COOL_TIME = 1.0f;		//çƒã‚¯ãƒ¼ãƒ«ã‚¿ã‚¤ãƒ 	(s)
+float Player::PLAYER_MAX_SPEED = (15.0f / 60);	//å‰é€²ã®æœ€å¤§ã‚¹ãƒ”ãƒ¼ãƒ‰(m/s)
+float Player::PLAYER_ACCELERATION = (0.5f / 60);	//å‰é€²ã®åŠ é€Ÿåº¦		(m/s)
+float Player::PLAYER_BEND_ACCELERATION = (6.0f / 60);	//æ¹¾æ›²ã®åŠ é€Ÿåº¦		(Â°/s)
+float Player::PLAYER_AIR_RESISTANCE = (0.99f);		//ç©ºæ°—æŠµæŠ—
+float Player::PLAYER_BEND_AIR_RESISTANCE = (0.90f);		//æ¹¾æ›²ã®ç©ºæ°—æŠµæŠ—
+float Player::PLAYER_STRAT_FALLING_SPEED = (10.0f / 60);	//è½ä¸‹é–‹å§‹é€Ÿåº¦		(m/s)
+float Player::PLAYER_FALL_SPEED__ACCELERATION = (0.1f / 60);	//è½ä¸‹ã®åŠ é€Ÿåº¦		(m/s)
+float Player::PLAYER_FALL_SPEED_MAX = (30.0f / 60);	//è½ä¸‹ã®æœ€å¤§é€Ÿåº¦	(m/s)
+int Player::PLAYER_MAX_HP = 20000;							//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®HP
+int Player::PLAYER_MAX_FUEL = 5000;							//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ç‡ƒæ–™
+int Player::PLAYER_OFFENSIVE_POWER = 1;						//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æ”»æ’ƒåŠ›
 float Player::BULLET_WIDTH = 1.2f;
 
 Player::Player() :
@@ -59,42 +59,42 @@ Player::Player() :
 	Json::CharReaderBuilder reader;
 	Json::Value root;
 
-	// ƒtƒ@ƒCƒ‹‚ªŠJ‚©‚ê‚Ä‚¢‚é‚©‚ðŠm”F‚µ‚Ü‚·B
+	// ãƒ•ã‚¡ã‚¤ãƒ«ãŒé–‹ã‹ã‚Œã¦ã„ã‚‹ã‹ã‚’ç¢ºèªã—ã¾ã™ã€‚
 	if (obj.is_open()) {
 		std::string errors;
 
-		// ƒtƒ@ƒCƒ‹‚©‚çJSON‚ðƒp[ƒX‚µ‚Ü‚·B
+		// ãƒ•ã‚¡ã‚¤ãƒ«ã‹ã‚‰JSONã‚’ãƒ‘ãƒ¼ã‚¹ã—ã¾ã™ã€‚
 		if (Json::parseFromStream(reader, obj, &root, &errors))
 		{
-			// JSON‚É "house" ‚ª‘¶Ý‚µA”z—ñ‚Å‚ ‚é‚©‚Ç‚¤‚©‚ðŠm”F‚µ‚Ü‚·B
+			// JSONã« "house" ãŒå­˜åœ¨ã—ã€é…åˆ—ã§ã‚ã‚‹ã‹ã©ã†ã‹ã‚’ç¢ºèªã—ã¾ã™ã€‚
 			if (root.isMember("PlayerData") && root["PlayerData"].isArray())
 			{
-				// "house" ”z—ñ‚ðŽæ“¾‚µ‚Ü‚·B
+				// "house" é…åˆ—ã‚’å–å¾—ã—ã¾ã™ã€‚
 				const Json::Value& PlayerData = root["PlayerData"][0];
 
 
-				BULLET_COOL_TIME = PlayerData["BULLET_COOL_TIME"][0].asFloat();		//‹…ƒN[ƒ‹ƒ^ƒCƒ€	(s)
-				PLAYER_MAX_SPEED = PlayerData["PLAYER_MAX_SPEED"][0].asFloat();	//‘Oi‚ÌÅ‘åƒXƒs[ƒh(m/s)
-				PLAYER_ACCELERATION = PlayerData["PLAYER_ACCELERATION"][0].asFloat();	//‘Oi‚Ì‰Á‘¬“x		(m/s)
-				PLAYER_BEND_ACCELERATION = PlayerData["PLAYER_BEND_ACCELERATION"][0].asFloat();	//˜p‹È‚Ì‰Á‘¬“x		(‹/s)
-				PLAYER_AIR_RESISTANCE = (0.99f);		//‹ó‹C’ïR
-				PLAYER_BEND_AIR_RESISTANCE = (0.90f);		//˜p‹È‚Ì‹ó‹C’ïR
-				PLAYER_STRAT_FALLING_SPEED = (10.0f / 60);	//—Ž‰ºŠJŽn‘¬“x		(m/s)
-				PLAYER_FALL_SPEED__ACCELERATION = (0.1f / 60);	//—Ž‰º‚Ì‰Á‘¬“x		(m/s)
-				PLAYER_FALL_SPEED_MAX = (30.0f / 60);	//—Ž‰º‚ÌÅ‘å‘¬“x	(m/s)
-				PLAYER_MAX_HP = PlayerData["PLAYER_MAX_HP"][0].asInt();							//ƒvƒŒƒCƒ„[‚ÌHP
-				PLAYER_MAX_FUEL = PlayerData["PLAYER_MAX_FUEL"][0].asInt();							//ƒvƒŒƒCƒ„[‚Ì”R—¿
-				PLAYER_OFFENSIVE_POWER = PlayerData["PLAYER_OFFENSIVE_POWER"][0].asInt();						//ƒvƒŒƒCƒ„[‚ÌUŒ‚—Í
+				BULLET_COOL_TIME = PlayerData["BULLET_COOL_TIME"][0].asFloat();		//çƒã‚¯ãƒ¼ãƒ«ã‚¿ã‚¤ãƒ 	(s)
+				PLAYER_MAX_SPEED = PlayerData["PLAYER_MAX_SPEED"][0].asFloat();	//å‰é€²ã®æœ€å¤§ã‚¹ãƒ”ãƒ¼ãƒ‰(m/s)
+				PLAYER_ACCELERATION = PlayerData["PLAYER_ACCELERATION"][0].asFloat();	//å‰é€²ã®åŠ é€Ÿåº¦		(m/s)
+				PLAYER_BEND_ACCELERATION = PlayerData["PLAYER_BEND_ACCELERATION"][0].asFloat();	//æ¹¾æ›²ã®åŠ é€Ÿåº¦		(Â°/s)
+				PLAYER_AIR_RESISTANCE = (0.99f);		//ç©ºæ°—æŠµæŠ—
+				PLAYER_BEND_AIR_RESISTANCE = (0.90f);		//æ¹¾æ›²ã®ç©ºæ°—æŠµæŠ—
+				PLAYER_STRAT_FALLING_SPEED = (10.0f / 60);	//è½ä¸‹é–‹å§‹é€Ÿåº¦		(m/s)
+				PLAYER_FALL_SPEED__ACCELERATION = (0.1f / 60);	//è½ä¸‹ã®åŠ é€Ÿåº¦		(m/s)
+				PLAYER_FALL_SPEED_MAX = (30.0f / 60);	//è½ä¸‹ã®æœ€å¤§é€Ÿåº¦	(m/s)
+				PLAYER_MAX_HP = PlayerData["PLAYER_MAX_HP"][0].asInt();							//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®HP
+				PLAYER_MAX_FUEL = PlayerData["PLAYER_MAX_FUEL"][0].asInt();							//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ç‡ƒæ–™
+				PLAYER_OFFENSIVE_POWER = PlayerData["PLAYER_OFFENSIVE_POWER"][0].asInt();						//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æ”»æ’ƒåŠ›
 				BULLET_WIDTH = 1.2f;
 			}
 		}
 		else {
-			std::cerr << "JSON‚Ìƒp[ƒXƒGƒ‰[: " << errors << std::endl;
+			std::cerr << "JSONã®ãƒ‘ãƒ¼ã‚¹ã‚¨ãƒ©ãƒ¼: " << errors << std::endl;
 		}
 		obj.close();
 	}
 	else {
-		std::cerr << "JSONƒtƒ@ƒCƒ‹‚ðŠJ‚­Û‚ÉƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B" << std::endl;
+		std::cerr << "JSONãƒ•ã‚¡ã‚¤ãƒ«ã‚’é–‹ãéš›ã«ã‚¨ãƒ©ãƒ¼ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚" << std::endl;
 	}
 
 }
@@ -129,7 +129,7 @@ void Player::Initialize(
 	m_pHouseMoveObjectsManager1 = HouseMoveObjectsManager2;
 	m_pHouseMoveObjectsManager2 = HouseMoveObjectsManager3;
 	m_pBigBrickWallManager = bigBrickWallManager;
-	//‹…‚ÌƒAƒhƒŒƒX
+	//çƒã®ã‚¢ãƒ‰ãƒ¬ã‚¹
 	m_pBulletManager = bulletManager;
 	m_pFenceManager = fenceManager;
 	m_pObjectsManager = objectsManager;
@@ -151,54 +151,54 @@ void Player::Initialize(
 
 	m_bloodEffect = std::make_unique<BloodEffect>();
 
-	//“–‚½‚è”»’è‚ð¶¬
+	//å½“ãŸã‚Šåˆ¤å®šã‚’ç”Ÿæˆ
 	m_collider = std::make_unique<Collider::Sphere>();
 
-	//“–‚½‚è”»’è‚ÉˆÊ’u‚Æ”¼Œa‚ðƒZƒbƒg
+	//å½“ãŸã‚Šåˆ¤å®šã«ä½ç½®ã¨åŠå¾„ã‚’ã‚»ãƒƒãƒˆ
 	m_collider->SetPosition(m_position);
 
 	m_collider->SetRadius(1.3f);
 
-	//ƒvƒŒƒCƒ„[‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ð¶¬‚·‚é
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹
 	AddPlayerMotion(
 		StatePlayerFactory::CreateMotion(
 			this, bulletManager, respawnManager, supplyPointManager, enemyManager, coinManager
 		)
 	);
 
-	//ƒvƒŒƒCƒ„[‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ð¶¬‚·‚é
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹
 	AddKillPlayerMotion(StatePlayerFactory::CreateKillMotion(this));
 
-	//ƒvƒŒƒCƒ„[‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ð¶¬‚·‚é
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹
 	AddPlayerStopMotion(
 		StatePlayerFactory::CreateStopMotion(
 			this, bulletManager, respawnManager, supplyPointManager, enemyManager, coinManager
 		)
 	);
-	//ƒvƒŒƒCƒ„[‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ð¶¬‚·‚é
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹
 	AddPlayerTurbMode(
 		StatePlayerFactory::CreateTurbMode(
 			this, bulletManager, respawnManager, supplyPointManager, enemyManager, coinManager
 		)
 	);
-	//ƒvƒŒƒCƒ„[‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ð¶¬‚·‚é
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹
 	AddPlayerAvoidanceMotion(
 		StatePlayerFactory::CreateAvoidanceMotion(
 			this,  respawnManager, supplyPointManager,  coinManager
 		)
 	);
 
-	//ƒvƒŒƒCƒ„[‚Ìî•ñ‚ðƒŠƒZƒbƒg
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æƒ…å ±ã‚’ãƒªã‚»ãƒƒãƒˆ
  	Reset();
 
-	//ƒŠƒZƒbƒg‚ÌŒã‚É‘‚­iˆÊ’u‚âŠp“x‚ðŽ‚½‚¹‚é‚©‚çj
-	// ƒvƒŒƒCƒ„[‚Éƒvƒƒyƒ‰‚ð’Ç‰Á‚·‚é
+	//ãƒªã‚»ãƒƒãƒˆã®å¾Œã«æ›¸ãï¼ˆä½ç½®ã‚„è§’åº¦ã‚’æŒãŸã›ã‚‹ã‹ã‚‰ï¼‰
+	// ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«ãƒ—ãƒ­ãƒšãƒ©ã‚’è¿½åŠ ã™ã‚‹
 	AddParts(PlayerPartFactory::CreatePlayerBody(nullptr, GetPosition(), GetRotate()));
 
-	//“®‚«‚Ìó‘Ô‚ðŽæ“¾
+	//å‹•ãã®çŠ¶æ…‹ã‚’å–å¾—
 	m_pCurrentState = m_motion.get();
 
-	//“®‚«‚Ì‰Šú‰»
+	//å‹•ãã®åˆæœŸåŒ–
 	m_pCurrentState->Initialize();
 
 }
@@ -251,23 +251,23 @@ void Player::Update(const float& elapsedTime)
 
 	if (m_pFloorManager_01)
 		m_pFloorManager_01->CheckHitCharacter(this);
-	//Œ»Ý‚Ìó‘Ô‚ÌXV
+	//ç¾åœ¨ã®çŠ¶æ…‹ã®æ›´æ–°
 	m_pCurrentState->Update(elapsedTime);
-	//“–‚½‚è”»’è‚ÉˆÊ’u‚Æ”¼Œa‚ðƒZƒbƒg
+	//å½“ãŸã‚Šåˆ¤å®šã«ä½ç½®ã¨åŠå¾„ã‚’ã‚»ãƒƒãƒˆ
 	m_collider->SetPosition(m_position);
 
-	//‹ó‹C’ïR//
-	//‘Oi‚ÌƒXƒs[ƒh‚Ì‹ó‹C’ïR
+	//ç©ºæ°—æŠµæŠ—//
+	//å‰é€²ã®ã‚¹ãƒ”ãƒ¼ãƒ‰ã®ç©ºæ°—æŠµæŠ—
 	SetSpeed(Player::PLAYER_AIR_RESISTANCE*GetSpeed());
-	////d—Í‚Ì‹ó‹C’ïR
+	////é‡åŠ›ã®ç©ºæ°—æŠµæŠ—
 	//SetGravity(Player::PLAYER_AIR_RESISTANCE * GetGravity());
-	//‹È‚ª‚éŽž‚Ì‹ó‹C’ïR
+	//æ›²ãŒã‚‹æ™‚ã®ç©ºæ°—æŠµæŠ—
 	SetVelcity(Player::PLAYER_BEND_AIR_RESISTANCE * GetVelcity());
 }
 
 void Player::Render()
 {	
-	//Œ»Ý‚Ìó‘Ô‚Ì•`‰æ
+	//ç¾åœ¨ã®çŠ¶æ…‹ã®æç”»
 	m_pCurrentState->Render();
 }
 
@@ -275,7 +275,7 @@ void Player::RenderShadowTex()
 {
 	for (auto& parts : m_parts)
 	{
-		// ƒp[ƒc‚ðXV‚·‚é
+		// ãƒ‘ãƒ¼ãƒ„ã‚’æ›´æ–°ã™ã‚‹
 		parts->RenderShadowTex();
 	}
 }
@@ -287,13 +287,13 @@ void Player::Finalize()
 
 void Player::Damage(const int& damage)
 {
-	//ƒ_ƒ[ƒW•ªHP‚ðŒ¸‚ç‚·
+	//ãƒ€ãƒ¡ãƒ¼ã‚¸åˆ†HPã‚’æ¸›ã‚‰ã™
 	SetHP(GetHP() - damage);
 }
 
 void Player::DoubleShot(const float& maxBulletCoolTime)
 {
-	//‹…‚Ì”­ŽËæ‚ð‰H‚É’²®
+	//çƒã®ç™ºå°„å…ˆã‚’ç¾½ã«èª¿æ•´
 	SimpleMath::Vector3 shot(BULLET_WIDTH, 0, 0);
 	shot = SimpleMath::Vector3::Transform(shot, m_rotate);
 
@@ -317,7 +317,7 @@ void Player::Shot(const float& maxBulletCoolTime)
 
 void Player::Reset()
 {
-	//ƒvƒŒƒCƒ„[‚Ìî•ñ‚ðƒŠƒZƒbƒg‚·‚é
+	//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æƒ…å ±ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹
 	SetHP(PLAYER_MAX_HP);
 	if (m_pRespawnManager)
 		SetPosition(m_pRespawnManager->GetRespawnPosition());
@@ -326,7 +326,7 @@ void Player::Reset()
 	SetVelcity(SimpleMath::Vector3::Zero);
 	SetFuel(PLAYER_MAX_FUEL);
 	SetRotate(DirectX::SimpleMath::Quaternion::Identity);
-	//‚X‚O“x‰ñ“]‚µ‚Ästart
+	//ï¼™ï¼åº¦å›žè»¢ã—ã¦start
 	SetAnimetionRotate(
 		DirectX::SimpleMath::Quaternion::CreateFromAxisAngle(
 			DirectX::SimpleMath::Vector3::UnitY,
@@ -342,7 +342,7 @@ void Player::Reset()
 	m_playerEffect->Initialize();
 	SetSpeed(Player::PLAYER_MAX_SPEED);
 	m_TiltAnimation = 0.0f;
-	//‹…‚ÌŽí—Þ‚ðƒZƒbƒg
+	//çƒã®ç¨®é¡žã‚’ã‚»ãƒƒãƒˆ
 	SetBulletType(Bullet::BulletType::Type2);
 	m_survival = true;
 	m_reflectionVector = DirectX::SimpleMath::Vector3::Zero;
@@ -352,7 +352,7 @@ void Player::PartsInitialize()
 {
 	for (auto& parts : m_parts)
 	{
-		// ƒp[ƒc‚ð‰Šú‰»
+		// ãƒ‘ãƒ¼ãƒ„ã‚’åˆæœŸåŒ–
    		parts->Initialize(m_reflectionVector*2);
 	}
 }
@@ -361,7 +361,7 @@ void Player::PartsUpdate()
 {
 	for (auto& parts : m_parts)
 	{
-		// ƒp[ƒc‚ðXV‚·‚é
+		// ãƒ‘ãƒ¼ãƒ„ã‚’æ›´æ–°ã™ã‚‹
 		parts->Update(GetPosition(), GetRotate());
 	}
 }
@@ -370,7 +370,7 @@ void Player::PartsExplosion()
 {
 	for (auto& parts : m_parts)
 	{
-		// ƒp[ƒc‚ðXV‚·‚é
+		// ãƒ‘ãƒ¼ãƒ„ã‚’æ›´æ–°ã™ã‚‹
 		parts->Explosion();
 	}
 }
@@ -379,7 +379,7 @@ void Player::PartsMotion()
 {
 	for (auto& parts : m_parts)
 	{
-		// ƒp[ƒc‚ðXV‚·‚é
+		// ãƒ‘ãƒ¼ãƒ„ã‚’æ›´æ–°ã™ã‚‹
 		parts->Speed();
 	}
 }
@@ -388,7 +388,7 @@ void Player::PartsRender()
 {
 	for (auto& part : m_parts)
 	{
-		//ƒp[ƒc‚ðXV‚·‚é
+		//ãƒ‘ãƒ¼ãƒ„ã‚’æ›´æ–°ã™ã‚‹
 		part->Render();
 	}
 
