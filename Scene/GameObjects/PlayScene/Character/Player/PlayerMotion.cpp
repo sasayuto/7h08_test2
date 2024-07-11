@@ -179,7 +179,7 @@ void PlayerMotion::Motion(const float& elapsedTime)
 	gravity *= Player::PLAYER_AIR_RESISTANCE;
 
 	//”j‰ó‚³‚ê‚é•ûŒü‚É”ò‚Î‚·
-	position += SimpleMath::Vector3::Transform(SimpleMath::Vector3(0.0f, 0.0f, -speed), m_pPlayer->GetRotate());
+	position += SimpleMath::Vector3::Transform(SimpleMath::Vector3(1.0f, 0.0f, -speed), m_pPlayer->GetRotate());
 
 	//À•W‚Éd—Í‚ğ‚Â‚¯‚é
 	position.y -= gravity;
