@@ -12,7 +12,7 @@
 
 using namespace DirectX;
 
-float Player::BULLET_COOL_TIME = 1.4740f;		//球クールタイム	(s)
+float Player::BULLET_COOL_TIME = 1.0f;		//球クールタイム	(s)
 float Player::PLAYER_MAX_SPEED = (15.0f / 60);	//前進の最大スピード(m/s)
 float Player::PLAYER_ACCELERATION = (0.5f / 60);	//前進の加速度		(m/s)
 float Player::PLAYER_BEND_ACCELERATION = (6.0f / 60);	//湾曲の加速度		(°/s)
