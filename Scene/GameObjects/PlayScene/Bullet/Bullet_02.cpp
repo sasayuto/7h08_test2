@@ -6,7 +6,7 @@
 #include "Bullet_02.h"
 using namespace DirectX;
 
-static const float SPEED(200 / 60);		//‘¬“x		(m/s)
+static const float SPEED(20 / 60);		//‘¬“x		(m/s)
 static const int OFFENSIVE_POWER(200);	//UŒ‚—Í	()
 static const float SCALE(1);			//‘å‚«‚³	()
 
