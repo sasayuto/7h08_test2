@@ -9,7 +9,7 @@ const float Bullet_Turret::FALL_SPEED_ACCELERATION(0.82f/ 60.0f);	//—‰º‚Ì‰Á‘¬“x
 
 using namespace DirectX;
 
-static const float SPEED(100.0f / 60);		//‘¬“x		(m/s)
+static const float SPEED(200.0f / 60);		//‘¬“x		(m/s)
 static const int OFFENSIVE_POWER(2000);		//UŒ‚—Í	()
 static const float SCALE(5.1f);				//‘å‚«‚³	()
 
